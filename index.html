@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+      defer></script>
+    <script defer src="./main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700;800;900&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>TeleBingo дарит квартиру</title>
+  </head>
+
+  <body>
+    <main>
+      <section class="intro">
+        <div class="container-common">
+          <div class="intro__description">
+            <div class="intro__desc-top">
+              <h2>TeleBingo дарит квартиру</h2>
+              <img src="./img/tb-logo.svg" alt="" />
+            </div>
+            <p>
+              Купи лотонабор <span>TELEBINGO</span> и&nbsp;участвуй
+              в&nbsp;розыгрыше
+              <b>11&nbsp;февраля</b>
+            </p>
+          </div>
+        </div>
+        <div class="container-common">
+          <div class="intro__bottom">
+            <div class="intro__visual">
+              <picture>
+                <source
+                  srcset="./img/room-desk.png"
+                  media="(min-width: 1024px)" />
+                <img
+                  class="visual-main"
+                  src="./img/room.png"
+                  srcset="./img/roomx2.png 2x"
+                  alt="" />
+              </picture>
+              <picture>
+                <source
+                  srcset="./img/cloud1-desk.png"
+                  media="(min-width: 1024px)" />
+                <img
+                  class="cloud1 slide-left"
+                  src="./img/cloud1.png"
+                  srcset="./img/cloud1x2.png 2x"
+                  alt="" />
+              </picture>
+              <picture>
+                <source
+                  srcset="./img/cloud2-desk.png"
+                  media="(min-width: 1024px)" />
+                <img
+                  class="cloud2 slide-left"
+                  src="./img/cloud2.png"
+                  srcset="./img/cloud2x2.png 2x"
+                  alt="" />
+              </picture>
+              <picture>
+                <source
+                  srcset="./img/cloud3-desk.png"
+                  media="(min-width: 1024px)" />
+                <img
+                  class="cloud3 slide-left"
+                  src="./img/cloud3-desk.png"
+                  srcset="./img/cloud3x2.png 2x"
+                  alt="" />
+              </picture>
+              <img
+                class="cloud4 slide-left"
+                src="./img/cloud4.png"
+                srcset="./img/cloud4x2.png 2x"
+                alt="" />
+              <picture>
+                <source
+                  srcset="./img/cloud5-desk.png"
+                  media="(min-width: 1024px)" />
+                <img
+                  class="cloud5 slide-left"
+                  src="./img/cloud5.png"
+                  srcset="./img/cloud5x2.png 2x"
+                  alt="" />
+              </picture>
+              <picture>
+                <source
+                  srcset="./img/cloud6-desk.png"
+                  media="(min-width: 1024px)" />
+                <img
+                  class="cloud6 slide-left"
+                  src="./img/cloud6.png"
+                  srcset="./img/cloud6x2.png 2x"
+                  alt="" />
+              </picture>
+              <picture>
+                <source
+                  srcset="./img/cloud7-desk.png"
+                  media="(min-width: 1024px)" />
+                <img
+                  class="cloud7 slide-left"
+                  src="./img/cloud7.png"
+                  srcset="./img/cloud7x2.png 2x"
+                  alt="" />
+              </picture>
+              <img class="ball1 soaring" src="./img/ball23-desk.png" alt="" />
+              <picture>
+                <source
+                  srcset="./img/ball57-desk.png"
+                  media="(min-width: 1024px)" />
+                <img
+                  class="ball2 soaring"
+                  srcset="./img/ball57x2.png 2x"
+                  alt="" />
+              </picture>
+              <img class="ball3 soaring" src="./img/ball8-desk.png" alt="" />
+              <img class="ball4 soaring" src="./img/ball8-desk.png" alt="" />
+              <img
+                class="ball5 soaring"
+                src="./img/ball57-rotated.png"
+                alt="" />
+              <img class="ball6 soaring" src="./img/ball15.png" alt="" />
+            </div>
+          </div>
+          <div class="intro__btns">
+            <a href="#" class="intro__btns1"><button>ПОДРОБНЕЕ</button></a>
+            <br />
+            <a href="#" class="intro__btns2"
+              ><button>
+                <img src="./img/icon-doc.svg" alt="" />
+                <p>Список участников</p>
+              </button></a
+            >
+            <a href="#" class="intro__btns2"
+              ><button>
+                <img src="./img/icon-doc.svg" alt="" />
+                <p>Список участников</p>
+              </button></a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="how how-cloud">
+        <div class="container-common">
+          <div class="how__bg">
+            <img class="cloud1 slide-left" src="./img/cloud2-desk.png" alt="" />
+            <img class="ball1 soaring" src="./img/blue8.png" alt="" />
+          </div>
+          <h2>Как <br />принять <br />участие?</h2>
+          <div class="how__tabs">
+            <a class="how__tabs--online"
+              ><button class="how__tab how__tabs--active" data-tab="online">
+                Онлайн-билет
+              </button></a
+            >
+            <a class="how__tabs--offline"
+              ><button class="how__tab" data-tab="offline">
+                Бумажный билет
+              </button></a
+            >
+          </div>
+
+          <div class="how-inner how__inner--online how__inner--active">
+            <div class="how__inner-block how__inner-block1">
+              <img src="./img/ticket.svg" alt="" />
+              <h3>Билет</h3>
+              <p>
+                Приобрести билет LOTO 6/49 c шестью лотерейными комбинациями
+              </p>
+            </div>
+            <div class="how__inner-block how__inner-block2">
+              <img src="./img/youtube-icon.svg" alt="" />
+              <h3>Эфир</h3>
+              <p>
+                Следить за розыгрышем в прямом эфире
+                <a href="https://www.youtube.com/c/sattyzhuldyz">YouTube</a>
+                канала 15 декабря 2023 года в 22:00
+              </p>
+            </div>
+          </div>
+
+          <div class="how-inner how__inner--offline">
+            <div class="how__inner-block how__inner-block1">
+              <img src="./img/ticket.svg" alt="" />
+              <h3>Билет</h3>
+              <p>
+                Приобрести билет LOTO 6/49 c шестью лотерейными комбинациями
+              </p>
+            </div>
+            <div class="how__inner-block how__inner-block2">
+              <img src="./img/off-icon.svg" alt="" />
+              <h3>Регистрация</h3>
+              <p>Зарегистрировать номер билета на терминале или на сайте</p>
+            </div>
+            <div class="how__inner-block">
+              <img src="./img/youtube-icon.svg" alt="" />
+              <h3>Эфир</h3>
+              <p>
+                Следить за розыгрышем в прямом эфире
+                <a href="https://www.youtube.com/c/sattyzhuldyz">YouTube</a>
+                канала 15 декабря 2023 года в 22:00
+              </p>
+            </div>
+
+            <div class="how__inner-block how__location">
+              <img src="./img/icon-location.svg" alt="" />
+              <h3>Где купить билет?</h3>
+              <p>
+                Купить бумажные билеты лотереи вы можете в точках продаж. С
+                картой расположения наших точек продаж можно ознакомиться на
+                специальной странице.
+              </p>
+              <a href="#"
+                ><button class="loc-btn">Карта точек продаж</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="form">
+        <div class="container-common">
+          <div class="form__bg">
+            <img
+              class="cloud1 slide-left"
+              src="./img/cloud2-desk.png"
+              srcset="./img/cloud2x2.png 2x"
+              alt="" />
+            <img
+              class="cloud2 slide-left"
+              src="./img/cloud3-desk.png"
+              srcset="./img/cloud3x2.png 2x"
+              alt="" />
+            <img
+              class="cloud3 slide-left"
+              src="./img/cloud2-desk.png"
+              srcset="./img/cloud2x2.png 2x"
+              alt="" />
+            <img
+              class="cloud4 slide-left"
+              src="./img/cloud2-desk.png"
+              srcset="./img/cloud2x2.png 2x"
+              alt="" />
+            <img class="ball1 soaring" src="./img/ball23-desk.png" alt="" />
+            <img class="ball2 soaring" src="./img/ball15-blurred.png" alt="" />
+          </div>
+          <div class="form__inner">
+            <iframe
+              id="iframeResizer"
+              src="https://test-module.szhuldyz.kz/promo-registration-form/?phone=&email=&date_birth=&terminal_id=Site&FIO=&sex=&promo_type=2&promo_id=22"
+              allowtransparency="true"
+              class="regis"
+              width="100%"
+              frameborder="0"
+              scrolling="no"></iframe>
+            <div class="form__inner-text">
+              <div class="inner-text__logo">
+                <img
+                  src="https://static.sz.kz/landings/pricing/img/tb-blue.svg"
+                  alt="" />
+              </div>
+              Игроки, купившие билеты онлайн, автоматически становятся
+              участниками розыгрыша КВАРТИРЫ. Регистрация не требуется.
+              <br />
+              <br />
+              28 марта 2021 года в эфире программы «TeleBingo» пройдет розыгрыш
+              КВАРТИРЫ среди всех билетов, прошедших регистрацию в соответствии
+              с условиями.
+            </div>
+          </div>
+          <div class="faq">
+            <div class="faq__bg">
+              <img
+                class="cloud1 slide-left"
+                src="./img/cloud3-desk.png"
+                srcset="./img/cloud3x2.png 2x"
+                alt="" />
+              <img
+                class="cloud2 slide-left"
+                src="./img/cloud3-desk.png"
+                srcset="./img/cloud3x2.png 2x"
+                alt="" />
+              <img
+                class="ball1 soaring"
+                src="./img/ball57-rotated.png"
+                alt="" />
+              <img class="ball2 soaring" src="./img/ball15.png" alt="" />
+            </div>
+            <h2>Часто <br />задаваемые <br />вопросы</h2>
+            <div class="faq__inner">
+              <div class="accordion">
+                <div class="accordion__text">
+                  <p>Как пройдет розыгрыш?</p>
+                  <div class="icon-open">
+                    <img src="./img/icon-open.svg" alt="" />
+                  </div>
+                </div>
+                <div class="accordion__body">
+                  <p>
+                    13 ноября 2022 года в прямом эфире телеканала «31 КАНАЛ» в
+                    9:00, в программе «TeleBingo» пройдет розыгрыш квартиры
+                    среди всех билетов, прошедших регистрацию в соответствии с
+                    условиями.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion">
+                <div class="accordion__text">
+                  <p>Как проводится розыгрыш квартиры?</p>
+                  <div class="icon-open">
+                    <img src="./img/icon-open.svg" alt="" />
+                  </div>
+                </div>
+                <div class="accordion__body">
+                  <p>
+                    13 ноября 2022 года в прямом эфире телеканала «31 КАНАЛ» в
+                    9:00, в программе «TeleBingo» пройдет розыгрыш квартиры
+                    среди всех билетов, прошедших регистрацию в соответствии с
+                    условиями.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion">
+                <div class="accordion__text">
+                  <p>Как получить выигрыш?</p>
+                  <div class="icon-open">
+                    <img src="./img/icon-open.svg" alt="" />
+                  </div>
+                </div>
+                <div class="accordion__body">
+                  <p>
+                    13 ноября 2022 года в прямом эфире телеканала «31 КАНАЛ» в
+                    9:00, в программе «TeleBingo» пройдет розыгрыш квартиры
+                    среди всех билетов, прошедших регистрацию в соответствии с
+                    условиями.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion">
+                <div class="accordion__text">
+                  <p>Как увеличить шансы на выигрыш?</p>
+                  <div class="icon-open">
+                    <img src="./img/icon-open.svg" alt="" />
+                  </div>
+                </div>
+                <div class="accordion__body">
+                  <p>
+                    13 ноября 2022 года в прямом эфире телеканала «31 КАНАЛ» в
+                    9:00, в программе «TeleBingo» пройдет розыгрыш квартиры
+                    среди всех билетов, прошедших регистрацию в соответствии с
+                    условиями.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion accordion1">
+                <div class="accordion__text">
+                  <p>Где я могу купить билет?</p>
+                  <div class="icon-open">
+                    <img src="./img/icon-open.svg" alt="" />
+                  </div>
+                </div>
+                <div class="accordion__body">
+                  <p>
+                    13 ноября 2022 года в прямом эфире телеканала «31 КАНАЛ» в
+                    9:00, в программе «TeleBingo» пройдет розыгрыш квартиры
+                    среди всех билетов, прошедших регистрацию в соответствии с
+                    условиями.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="archive">
+        <div class="container-common">
+          <div class="archive__top">
+            <div class="archive__top-bg">
+              <img
+                class="cloud1 slide-left"
+                src="./img/cloud2-desk.png"
+                srcset="./img/cloud2x2.png 2x"
+                alt="" />
+              <img
+                class="cloud2 slide-left"
+                src="./img/cloud1-desk.png"
+                srcset="./img/cloud1-4x2.png 2x"
+                alt="" />
+              <img class="ball1 soaring" src="./img/ball8-archive.png" alt="" />
+              <img class="ball2 soaring" src="./img/blue23.png" alt="" />
+            </div>
+            <h2>Прошлая трансляция</h2>
+            <div class="archive__container">
+              <iframe
+                class="video"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/Z1mmmhtv5VI?si=B3tbG6MmugVYeNk3"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+              <h3>Розыгрыш квартиры</h3>
+              <p class="winner">
+                Номер выигрышного билета <br />
+                №12020415
+              </p>
+              <p class="date">06.03.2022</p>
+            </div>
+          </div>
+          <div class="archive__bottom">
+            <div class="archive__bot-bg">
+              <img
+                class="cloud1 slide-left"
+                src="./img/cloud2-desk.png"
+                srcset="./img/cloud2x2.png 2x"
+                alt="" />
+              <img class="ball1 soaring" src="./img/blue57.png" alt="" />
+            </div>
+            <h2>Список Победителей</h2>
+            <div class="archive__block">
+              <div class="archive__lines">
+                <div class="archive__items">Дата</div>
+                <div class="archive__items">Номер</div>
+                <div class="archive__items">Город</div>
+                <div class="archive__items center-text">Тираж</div>
+              </div>
+              <div class="archive__lines">
+                <div class="archive__lines-info">
+                  <div class="archive__items">27.10.2023</div>
+                  <div class="archive__items">№23961154</div>
+                  <div class="archive__items">Астана</div>
+                </div>
+                <div class="archive__items link-area">
+                  <a href="#"><img src="./img/icon-yt-black.svg" alt="" /></a>
+                </div>
+              </div>
+
+              <div class="archive__lines">
+                <div class="archive__lines-info">
+                  <div class="archive__items">27.10.2023</div>
+                  <div class="archive__items">№23961154</div>
+                  <div class="archive__items">Астана</div>
+                </div>
+                <div class="archive__items link-area">
+                  <a href="#"><img src="./img/icon-yt-black.svg" alt="" /></a>
+                </div>
+              </div>
+
+              <div class="archive__lines">
+                <div class="archive__lines-info">
+                  <div class="archive__items">27.10.2023</div>
+                  <div class="archive__items">№23961154</div>
+                  <div class="archive__items">Астана</div>
+                </div>
+                <div class="archive__items link-area">
+                  <a href="#"><img src="./img/icon-yt-black.svg" alt="" /></a>
+                </div>
+              </div>
+
+              <div class="archive__lines">
+                <div class="archive__lines-info">
+                  <div class="archive__items">27.10.2023</div>
+                  <div class="archive__items">№23961154</div>
+                  <div class="archive__items">Астана</div>
+                </div>
+                <div class="archive__items link-area">
+                  <a target="_blank" href="#"
+                    ><img src="./img/icon-yt-black.svg" alt=""
+                  /></a>
+                </div>
+              </div>
+
+              <div class="archive__lines">
+                <div class="archive__lines-info">
+                  <div class="archive__items">27.10.2023</div>
+                  <div class="archive__items">№23961154</div>
+                  <div class="archive__items">Астана</div>
+                </div>
+                <div class="archive__items link-area">
+                  <a href="#"><img src="./img/icon-yt-black.svg" alt="" /></a>
+                </div>
+              </div>
+
+              <div class="archive__lines">
+                <div class="archive__lines-info">
+                  <div class="archive__items">27.10.2023</div>
+                  <div class="archive__items">№23961154</div>
+                  <div class="archive__items">Астана</div>
+                </div>
+                <div class="archive__items link-area">
+                  <a href="#"><img src="./img/icon-yt-black.svg" alt="" /></a>
+                </div>
+              </div>
+
+              <div class="archive__lines">
+                <div class="archive__lines-info">
+                  <div class="archive__items">27.10.2023</div>
+                  <div class="archive__items">№23961154</div>
+                  <div class="archive__items">Астана</div>
+                </div>
+                <div class="archive__items link-area">
+                  <a href="#"><img src="./img/icon-yt-black.svg" alt="" /></a>
+                </div>
+              </div>
+
+              <div class="archive__lines">
+                <div class="archive__lines-info">
+                  <div class="archive__items">27.10.2023</div>
+                  <div class="archive__items">№23961154</div>
+                  <div class="archive__items">Астана</div>
+                </div>
+                <div class="archive__items link-area">
+                  <a href="#"><img src="./img/icon-yt-black.svg" alt="" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
